@@ -1,11 +1,25 @@
 import numpy as np
 import cv2
+'''
+ Title: AP Face Detection
+ Files: cv/cascades
 
+ Contributors:
+    Devin Mozee
+    Ronald Simpson
+    Geromy Edwards
+
+The following program dectects faces via video source using OpenCV cascades.
+OpenCV must be installed in order for the program to work; see http://opencv.org/releases.html
+for source pack.
+
+Cascades are available in our repo: https://github.com/Alpha-Drone/mechVision
+'''
 #load in cascades
 face_cascade = cv2.CascadeClassifier("cascades/haarcascade_frontalface_default.xml")
 
 #Capture video source
-vid = cv2.VideoCapture(0)
+vid = cv2.VideoCapture(0) #change input base on computer
 
 while True:
 
